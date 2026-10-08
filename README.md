@@ -1,4 +1,4 @@
-# SOC Home Lab Portfolio
+# UTM Kali + Windows Home Lab
 
 A hands-on home SOC lab built on an Apple Silicon Mac using **UTM**, **Kali Linux ARM64**, and **Windows 11 ARM64**.
 
