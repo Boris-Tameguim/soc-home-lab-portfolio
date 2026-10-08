@@ -154,7 +154,7 @@ This repository will grow into a larger SOC practice environment. Planned additi
 - [x] Kali to Windows connectivity
 - [x] Windows Firewall troubleshooting
 - [x] Architecture image committed to repository
-- [ ] Screenshots committed to repository
+- [x] Screenshots committed to repository
 - [ ] Sysmon and Windows telemetry
 - [ ] SIEM integration
 
