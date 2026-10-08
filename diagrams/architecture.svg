@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <defs>
+    <style>
+      .bg{fill:#0d1117}.panel{fill:#161b22;stroke:#30363d;stroke-width:2}.title{fill:#f0f6fc;font:700 36px Arial,sans-serif}.sub{fill:#8b949e;font:20px Arial,sans-serif}.h{fill:#f0f6fc;font:700 24px Arial,sans-serif}.t{fill:#c9d1d9;font:18px Arial,sans-serif}.small{fill:#8b949e;font:16px Arial,sans-serif}.blue{stroke:#2f81f7}.green{stroke:#3fb950}.purple{stroke:#a371f7}.orange{stroke:#d29922}.line{fill:none;stroke-width:5;stroke-linecap:round}.tag{fill:#21262d;stroke:#a371f7;stroke-width:2}.ok{fill:#3fb950;font:700 18px Arial,sans-serif}.warn{fill:#d29922;font:700 18px Arial,sans-serif}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#58a6ff"/></marker>
+    <marker id="arrowg" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#3fb950"/></marker>
+  </defs>
+  <rect width="1200" height="760" class="bg"/>
+  <text x="600" y="55" text-anchor="middle" class="title">Home SOC Lab Architecture</text>
+  <text x="600" y="88" text-anchor="middle" class="sub">Kali Linux ↔ Windows 11 on UTM (Apple Silicon)</text>
+
+  <rect x="390" y="120" rx="18" ry="18" width="420" height="110" class="panel"/>
+  <text x="600" y="162" text-anchor="middle" class="h">MacBook Pro (M1 Max)</text>
+  <text x="600" y="195" text-anchor="middle" class="sub">macOS host</text>
+
+  <path d="M600 230 L600 280" class="line blue"/>
+  <rect x="390" y="280" rx="18" ry="18" width="420" height="105" class="panel blue"/>
+  <text x="600" y="325" text-anchor="middle" class="h">UTM</text>
+  <text x="600" y="356" text-anchor="middle" class="sub">Virtual Machine Manager</text>
+
+  <rect x="470" y="415" rx="18" ry="18" width="260" height="54" class="tag"/>
+  <text x="600" y="449" text-anchor="middle" class="h" font-size="22">UTM Virtual Networking</text>
+
+  <path d="M520 385 L520 415" class="line purple"/>
+  <path d="M680 385 L680 415" class="line purple"/>
+  <path d="M520 469 L360 520" class="line blue"/>
+  <path d="M680 469 L840 520" class="line green"/>
+
+  <rect x="95" y="520" rx="18" ry="18" width="370" height="155" class="panel blue"/>
+  <text x="280" y="565" text-anchor="middle" class="h">Kali Linux</text>
+  <text x="280" y="596" text-anchor="middle" class="t">kali-attacker</text>
+  <text x="280" y="628" text-anchor="middle" class="t">192.168.65.2/24</text>
+  <text x="280" y="655" text-anchor="middle" class="small">Gateway: 192.168.65.1 · ARM64</text>
+
+  <rect x="735" y="520" rx="18" ry="18" width="370" height="155" class="panel green"/>
+  <text x="920" y="565" text-anchor="middle" class="h">Windows 11</text>
+  <text x="920" y="596" text-anchor="middle" class="t">windows-target</text>
+  <text x="920" y="628" text-anchor="middle" class="t">192.168.66.2/24</text>
+  <text x="920" y="655" text-anchor="middle" class="small">Gateway: 192.168.66.1 · ARM64</text>
+
+  <path d="M465 585 L735 585" class="line green" marker-end="url(#arrowg)"/>
+  <path d="M735 610 L465 610" class="line blue" marker-end="url(#arrow)"/>
+  <text x="600" y="560" text-anchor="middle" class="small">Routed two-way connectivity</text>
+
+  <rect x="95" y="695" rx="12" ry="12" width="1010" height="46" class="panel orange"/>
+  <text x="115" y="724" class="warn">Troubleshooting:</text>
+  <text x="275" y="724" class="t">Windows Firewall initially blocked inbound ICMPv4; a targeted echo-request rule enabled Kali → Windows ping.</text>
+</svg>
