@@ -100,7 +100,25 @@ screenshots/
 └── 05-kali-to-windows.png
 ```
 
-Once the screenshots are uploaded, they will be displayed here.
+### UTM virtual machines
+
+![UTM VMs](screenshots/01-utm-vms.png)
+
+### Kali network and architecture
+
+![Kali network](screenshots/02-kali-network.png)
+
+### Windows network configuration
+
+![Windows network](screenshots/03-windows-network.png)
+
+### Windows to Kali connectivity
+
+![Windows to Kali](screenshots/04-windows-to-kali.png)
+
+### Kali to Windows connectivity
+
+![Kali to Windows](screenshots/05-kali-to-windows.png)
 
 ## What I Learned
 
@@ -135,7 +153,7 @@ This repository will grow into a larger SOC practice environment. Planned additi
 - [x] Windows to Kali connectivity
 - [x] Kali to Windows connectivity
 - [x] Windows Firewall troubleshooting
-- [ ] Architecture image committed to repository
+- [x] Architecture image committed to repository
 - [ ] Screenshots committed to repository
 - [ ] Sysmon and Windows telemetry
 - [ ] SIEM integration
