@@ -137,5 +137,3 @@ This demonstrated the difference between:
 This repository is intentionally kept focused on the **virtual lab and networking foundation**. More advanced exercises such as SIEM deployment, packet analysis, identity management, Linux services, and SOC investigations will be built as separate repositories so each project can stand on its own.
 
 ---
-
-**Project 1 complete.**
