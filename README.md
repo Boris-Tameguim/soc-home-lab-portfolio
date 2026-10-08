@@ -2,7 +2,7 @@
 
 A hands-on home SOC lab built on an Apple Silicon Mac using **UTM**, **Kali Linux ARM64**, and **Windows 11 ARM64**.
 
-The goal of this project is to build a small virtual security lab, understand the networking between the systems, troubleshoot connectivity issues, and create a foundation for future SOC exercises such as log collection, Sysmon, SIEM ingestion, detection engineering, and controlled attack simulation.
+The goal of this project was to build two virtual machines, configure virtual networking, verify two-way communication, and troubleshoot a real Windows Firewall connectivity issue. This repository represents the completed first project in my cybersecurity home-lab portfolio.
 
 ## Architecture
 
@@ -55,7 +55,7 @@ From Windows:
 ping 192.168.65.2
 ```
 
-Result: **successful** - 4 packets sent, 4 received, 0% loss.
+Result: **successful** — 4 packets sent, 4 received, 0% loss.
 
 ### Kali to Windows
 
@@ -65,13 +65,13 @@ From Kali:
 ping -c 4 192.168.66.2
 ```
 
-Result: **successful** - 4 packets transmitted, 4 received, 0% packet loss.
+Result: **successful** — 4 packets transmitted, 4 received, 0% packet loss.
 
 ## Troubleshooting
 
 The Windows-to-Kali ping worked first, but Kali-to-Windows initially received no replies.
 
-That was an important troubleshooting step because it showed that the virtual network and routing path were working, while inbound traffic to the Windows host was being filtered.
+That showed that the virtual network and routing path were working while inbound traffic to the Windows host was being filtered.
 
 I added a targeted Windows Firewall rule to allow inbound ICMPv4 echo requests:
 
@@ -88,17 +88,6 @@ This demonstrated the difference between:
 - one-way versus two-way reachability.
 
 ## Screenshots
-
-The project evidence is organized as:
-
-```text
-screenshots/
-├── 01-utm-vms.png
-├── 02-kali-network.png
-├── 03-windows-network.png
-├── 04-windows-to-kali.png
-└── 05-kali-to-windows.png
-```
 
 ### UTM virtual machines
 
@@ -130,22 +119,9 @@ screenshots/
 - How to create a specific Windows Firewall rule rather than disabling the firewall.
 - How to verify two-way connectivity with ICMP.
 
-## Next Steps
-
-This repository will grow into a larger SOC practice environment. Planned additions include:
-
-- Windows Event Log investigation
-- Sysmon installation and configuration
-- PowerShell logging
-- Nmap reconnaissance from Kali
-- controlled authentication and network activity
-- SIEM/log collection
-- detection rules
-- alert triage and investigation notes
-
 ## Project Status
 
-**Phase 1 — Virtual lab and networking: Complete**
+**Complete**
 
 - [x] Kali Linux ARM64 VM
 - [x] Windows 11 ARM64 VM
@@ -153,11 +129,13 @@ This repository will grow into a larger SOC practice environment. Planned additi
 - [x] Windows to Kali connectivity
 - [x] Kali to Windows connectivity
 - [x] Windows Firewall troubleshooting
-- [x] Architecture image committed to repository
+- [x] Architecture documented
 - [x] Screenshots committed to repository
-- [ ] Sysmon and Windows telemetry
-- [ ] SIEM integration
+
+## Portfolio Structure
+
+This repository is intentionally kept focused on the **virtual lab and networking foundation**. More advanced exercises such as SIEM deployment, packet analysis, identity management, Linux services, and SOC investigations will be built as separate repositories so each project can stand on its own.
 
 ---
 
-This is my first cybersecurity home-lab project and will be expanded as I continue building practical SOC and defensive-security skills.
+**Project 1 complete.**
