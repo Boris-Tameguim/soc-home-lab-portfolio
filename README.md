@@ -55,7 +55,7 @@ From Windows:
 ping 192.168.65.2
 ```
 
-Result: **successful** — 4 packets sent, 4 received, 0% loss.
+Result: **successful** - 4 packets sent, 4 received, 0% loss.
 
 ### Kali to Windows
 
@@ -65,7 +65,7 @@ From Kali:
 ping -c 4 192.168.66.2
 ```
 
-Result: **successful** — 4 packets transmitted, 4 received, 0% packet loss.
+Result: **successful** - 4 packets transmitted, 4 received, 0% packet loss.
 
 ## Troubleshooting
 
